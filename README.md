@@ -213,7 +213,7 @@
                         <li>Aceasta reprezintă meniul de navigare către fiecare pagina a aplicației, prezent pe fiecare
                             pagină totodată.
                         </li>
-                        <li class="pictures" style="list-style: none"><img alt="login" src="Images/navBar.png" width=800
+                        <li class="pictures" style="list-style: none"><img alt="login" src="Images/navBar.png" width=100%
                         ></li>
                     </ul>
                 </li>
@@ -242,8 +242,7 @@
                         <li>Pagina are rolul de a prezenta câteva sfaturi pentru a putea beneficia de o experienta
                             completa pe site.
                         </li>
-                        <li class="pictures" style="list-style: none"><img alt="overview" src="Images/helpPage.png"
-                                                                           width=800
+                        <li class="pictures" style="list-style: none"><img alt="overview" src="Images/helpPage.png" width=800>
                         </li>
                     </ul>
                 </li>
