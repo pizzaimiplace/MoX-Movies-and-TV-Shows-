@@ -213,7 +213,7 @@
                         <li>Aceasta reprezintă meniul de navigare către fiecare pagina a aplicației, prezent pe fiecare
                             pagină totodată.
                         </li>
-                        <li class="pictures" style="list-style: none"><img alt="login" src="images/navBar.png" width=800
+                        <li class="pictures" style="list-style: none"><img alt="login" src="Images/navBar.png" width=800
                         ></li>
                     </ul>
                 </li>
@@ -221,7 +221,7 @@
                 <li style="list-style: none">
                     <ul>
                         <li>Pagina are rolul de a intriga utilizatorul in a cauta un serial/film pentru a vedea functionalitatea acestuia.</li>
-                        <li class="pictures" style="list-style: none"><img alt="overview" src="images/homePage.png"
+                        <li class="pictures" style="list-style: none"><img alt="overview" src="Images/homePage.png"
                                                                            width=800>
                         </li>
                     </ul>
@@ -233,7 +233,7 @@
                             tehnologii
                             utilizate, numele autorilor, scopul aplicației și bibliografia.
                         </li>
-                        <li class="pictures" style="list-style: none"><img alt="overview" src="images/aboutPage.png" width=800>
+                        <li class="pictures" style="list-style: none"><img alt="overview" src="Images/aboutPage.png" width=800>
                         </li>
                     </ul>
                 <li id="help"><b>Pagina de ajutor</b></li>
@@ -242,7 +242,7 @@
                         <li>Pagina are rolul de a prezenta câteva sfaturi pentru a putea beneficia de o experienta
                             completa pe site.
                         </li>
-                        <li class="pictures" style="list-style: none"><img alt="overview" src="images/helpPage.png"
+                        <li class="pictures" style="list-style: none"><img alt="overview" src="Images/helpPage.png"
                                                                            width=800
                         </li>
                     </ul>
@@ -251,7 +251,7 @@
                 <li style="list-style: none">
                     <ul>
                         <li>Pagina afișează interfață pentru <b>adminstrator</b>.</li>
-                        <li class="pictures" style="list-style: none"><img alt="overview" src="images/admin1.png"
+                        <li class="pictures" style="list-style: none"><img alt="overview" src="Images/admin1.png"
                                                                            width=800>
                         </li>
                         <li>Administratorul are capacitatea de a adaugă/modifică
