@@ -50,6 +50,7 @@ header{
     color: #fff;
     font-size: 20px; 
     text-align: justify;
+    margin-top: 15vh;
 }
 .section{
     padding-left: 5vw;
@@ -122,7 +123,7 @@ a {
 .page-button a{
     display: block;
     text-decoration: none;
-    margin: 7vw;
+    margin: 4vw;
     color: #fff;
 }
 
@@ -137,6 +138,9 @@ a {
     }
     .pages-buttons-header{
         visibility: visible;
+    }
+    .overlay-text{
+        margin-top: auto;
     }
 }
 @media only screen and (min-width: 1025px)  {

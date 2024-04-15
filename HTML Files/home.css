@@ -85,17 +85,6 @@ li a{
     padding: 10vw;
     color: #fff;
 }
-.pages-buttons{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    top:13%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100vh;
-}
 .overlay-text{
     color:#fff;
     position: absolute;
@@ -108,18 +97,62 @@ li a{
     overflow-y: scroll;
     overflow-x: hidden;
 }
+.pages-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-top: 17%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100vh;
+    font-size: 20px;
+}
+.button-list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.page-button{
+    float: left;
+    margin: 0 auto;
+    text-align: center;
+}
+.pages-buttons-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 13px;
+    margin-top: 10px;
+    left: 20%;
+    transform: translate(-15%, -49%);
+    width: 100%;
+    height: 100vh;
+    font-size: 25px;
+    visibility: hidden;
+}
+.page-button a{
+    display: block;
+    text-decoration: none;
+    margin: 7vw;
+    color: #fff;
+}
+
 @media only screen and (min-width: 768px)  {
+    .logo{
+        display: block;
+        width: 5%;
+        padding: 20px 10px ;
+    }
     .pages-buttons{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: fixed;
-        top:13%;
-        left:50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-        height: 100vh;
-        font-size: 20px;
+        visibility: hidden;
+    }
+    .pages-buttons-header{
+        visibility: visible;
     }
     .search-container{
         position: absolute;
@@ -156,30 +189,6 @@ li a{
         width: 5%;
         padding: 20px 10px ;
     }
-    .pages-buttons{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: fixed;
-        top:14%;
-        left:50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-        height: 100vh;
-        font-size: 20px;
-    }
-    .search-container{
-        position: absolute;
-        display:flex;
-        border: 1px solid;
-        border-radius: 3px;
-        margin-top: 10%;
-        overflow: hidden;
-        background-color: #371A54;
-        left: 20%;
-        right: 20%;
-        top: 30%;
-    }
     h1{
         font-size: 40px;
         margin-bottom: 10px;
@@ -201,18 +210,6 @@ li a{
         display: block;
         width: 5%;
         padding: 20px 10px ;
-    }
-    .pages-buttons{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: fixed;
-        top:15%;
-        left:50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-        height: 100vh;
-        font-size: 20px;
     }
     .search-container{
         position: absolute;
