@@ -251,62 +251,6 @@
                         ></li>
                     </ul>
                 </li>
-                <li id="login-page"><b>Pagina de autentificare</b></li>
-                <li style="list-style: none">
-                    <ul>
-                        <li>Pagina are rolul de a realiza autentificarea utilizatorilor la RoT.</li>
-                        <li>Pentru a se autentifica, utilizatorul trebuie să completeze câmpurile de "username" și
-                            "parolă" cu
-                            credențiale <b>valide</b>, urmând să acționeze butonul <b>Autentificare</b>.
-                        </li>
-                        <li> În cazul în care utilizatorul nu are cont pe site, acesta își poate crea unul prin
-                            accesarea pagini de
-                            înregistrare, ce se face prin apăsarea butonului <b>Creează un cont nou</b>.
-                        </li>
-                        <li> În cazul în care utilizatorul și-a uitat parola, acesta poate să o reseteze selectând
-                            opțiunea de
-                            <b> Ai uitat parola? </b></li>
-                        <li class="pictures" style="list-style: none"><img alt="login" height="400"
-                                                                           src="images/loginPage.png" width=800>
-                        </li>
-                    </ul>
-                </li>
-                <li id="signup-page"><b>Pagina de înregistrare</b></li>
-                <li style="list-style: none">
-                    <ul>
-                        <li>Pagina oferă funcționalitatea de înregistrare a utilizatorilor, pentru a putea beneficia de
-                            toate
-                            funcționalitățile RoT.
-                        </li>
-                        <li>Pentru a se înregistra, utilizatorul trebuie să completeze câmpurile <b>Email</b>,
-                            <b>Nume</b>,
-                            <b>Prenume</b>, <b>Nume utilizator</b> și <b>Parola</b>. Mai mult, câmpurile <b>Email</b> și
-                            <b>Nume utilizator</b>
-                            trebuie să fie <b>unice</b>.
-                        </li>
-                        <li>În cazul în care utilizatorul își amintește că are un cont existent, acesta poate apasă
-                            butonul
-                            <b>Autentificare</b> aflat în partea de jos a formularului, sau pe butonul <b>Login</b> din
-                            coltul din dreapta-sus
-                            al paginii, pentru a reveni la meniul de autentificare.
-                        </li>
-                        <li class="pictures" style="list-style: none"><img alt="signup" height="400"
-                                                                           src="images/signupPage.png" width=800>
-                    </ul>
-                </li>
-                <li id="sendMail-page"><b>Pagina de de resetare a parolei prin mail</b></li>
-                <li style="list-style: none">
-                    <ul>
-                        <li> Pagina are rolul de a trimite un email către utilizator, care îl va redirecționa spre o
-                            pagină nouă, unde care
-                            își va introduce nouă parolă. La apăsarea butonului de <b> Trimite mail </b>, utilizatorul
-                            va fi redirecționat
-                            către pagină de autentificare.
-                        </li>
-                        <li class="pictures" style="list-style: none"><img alt="login" height="400"
-                                                                           src="images/sendMail.png" width=800></li>
-                    </ul>
-                </li>
                 <li id="home-page"><b> Pagina de acasă</b></li>
                 <li style="list-style: none">
                     <ul>
@@ -314,98 +258,6 @@
                         <li class="pictures" style="list-style: none"><img alt="overview" src="images/homePage.png"
                                                                            width=800>
                         </li>
-                    </ul>
-                </li>
-                <li id="learning"><b>Pagina de învățare</b></li>
-                <li style="list-style: none">
-                    <ul>
-                        <li>Pagina oferă o întrebare dată spre rezolvare, la care se va oferi o explicație indiferent de
-                            corectitudinea
-                            răspunsului dat de utilizator. Butonul <b>Trimite răspunsul</b> va valida întrebarea, iar
-                            <b>Următoarea întrebare</b>
-                            o va sări pe cea curentă, dar se va reveni mai târziu la ea.
-                        </li>
-                        <li class="pictures" style="list-style: none"><img alt="overview" src="images/learn1.png"
-                                                                           width=800>
-                        </li>
-                        <li>După ce răspunsul a fost trimis, utilizatorul va vedea corectitudinea fiecărui răspuns,
-                            însoțite de o
-                            explicație corespunzătoare.
-                        </li>
-                        <li class="pictures" style="list-style: none"><img alt="overview" src="images/learn2.png"
-                                                                           width=800>
-                        </li>
-                        <li class="pictures" style="list-style: none"><img alt="editprofile"
-                                                                           src="images/learningPage.png" width=800>
-                        </li>
-                    </ul>
-                </li>
-                <li id="rules"><b>Pagina cu legislația</b></li>
-                <li style="list-style: none">
-                    <ul>
-                        <li>Pagina conține codul rutier actualizat la zi.</li>
-                        <li class="pictures" style="list-style: none"><img alt="overview" src="i mages/rulesPage.png"
-                                                                           width=800>
-                        </li>
-                    </ul>
-                <li id="signs"><b>Pagina cu semnele de circulație</b></li>
-                <li style="list-style: none">
-                    <ul>
-                        <li>Pagina conține semne rutiere atât din țară noastră, cât și din alte cinci țări.</li>
-                        <li> Pentru a accesa semnele din România, se va face click pe steag, urmând să se selecteze în
-                            mod specific
-                            categoria de semne dorită spre a fi văzută. Apăsând pe oricare dintre cele 5 steaguri
-                            străine, se va deschide
-                            o listă cu semnele de circulație corespunzătoare.
-                        </li>
-                        <li class="pictures" style="list-style: none"><img alt="streetSigns"
-                                                                           src="images/streetSigns.png" width=800
-                        ></li>
-                        <li class="pictures" style="list-style: none"><img alt="streetSignsRomania"
-                                                                           src="images/streetSignsRomania.png" width=800
-                        ></li>
-                        <li class="pictures" style="list-style: none"><img alt="streetSignsRomaniaExamples"
-                                                                           src="images/streetSignsRomaniaExample.png" width=800
-                        ></li>
-                        <li class="pictures" style="list-style: none"><img alt="streetSignsItaly"
-                                                                           src="images/streetSignsItaly.png" width=800
-                        ></li>
-                    </ul>
-                </li>
-                <li id="tests"><b>Pagina de chestionare</b></li>
-                <li style="list-style: none">
-                    <ul>
-                        <li>Pagina prezintă o lista de chestionare predefinite, la care se poate obține un punctaj maxim
-                            de 26 de răspunsuri
-                            corecte. Astfel, fiecare dintre chestionare are un status: <b>Eșuat</b>, <b>Neîncercat</b>
-                            și <b>Perfect</b>;
-                            acestea pot fi refăcute până la obținerea punctajului maxim.
-                        </li>
-                        <li>La momentul începerii unui chestionar, un cronometru de 30 de minute va porni, acesta
-                            constituind durata de
-                            rezolvare a testului. Testul va fi trecut dacă utilizatorul va răspunde la cel puțin 22 de
-                            întrebări corect,
-                            dar totodată nu se va opri dacă acesta acumulează mai mult de 4 răspunsuri greșite.
-                        </li>
-                        <li>Întrebările au 3 variante de răspuns, cu cel puțin unul corect la fiecare. Pentru a rezolva,
-                            se va(vor) bifa
-                            răspunsul(urile) corect(e) și se va apăsa butonul <b>Trimite răspunsul</b>, sau <b>Răspunde
-                                mai târziu</b>,
-                            dacă se dorește amânarea pe mai târziu a întrebării curente.
-                        </li>
-                        <li>La finalul completării testului, acesta își va schimbă statusul, dacă este cazul, și se va
-                            primi un mesaj
-                            conform căruia utilizatorul a trecut sau nu testul cu brio.
-                        </li>
-                        <li class="pictures" style="list-style: none"><img alt="streetSignsRomania"
-                                                                           src="images/testList.png" width=800
-                        ></li>
-                        <li class="pictures" style="list-style: none"><img alt="streetSignsRomaniaExamples"
-                                                                           src="images/testExample.png" width=800
-                        ></li>
-                        <li class="pictures" style="list-style: none"><img alt="streetSignsItaly"
-                                                                           src="images/testDone.png" width=800
-                        ></li>
                     </ul>
                 </li>
                 <li id="about"><b>Pagina informativa</b></li>
@@ -426,45 +278,6 @@
                         </li>
                         <li class="pictures" style="list-style: none"><img alt="overview" src="images/helpPage.png"
                                                                            width=800
-                        </li>
-                    </ul>
-                <li id="profile"><b>Pagina de profil</b></li>
-                <li style="list-style: none">
-                    <ul>
-                        <li>Pagina prezintă informații despre utilizator.</li>
-                        <li>
-                            <img alt="overview" src="images/profile1.png" width=800>
-                        </li>
-                        <li>Utilizatorul <b>autentificat</b> își va vedea la profil detalii despre cont, un procent
-                            referitor la
-                            progresul sau, numărul de întrebări/chestionare parcurse (corecte și greșite), dar și câteva
-                            grafice
-                            corespunzătoare acestora.
-                        </li>
-                        <li>Mai mult, utilizatorul va avea la dispoziție un buton <b>Logout</b> prin care poate ieși din
-                            cont,
-                            dar is unul <b>Schimbă parolă</b>, în cazul în care își dorește acest lucru.
-                        </li>
-                        <li><img alt="overview" src="images/profile2.png" width=800></li>
-                        <li><img alt="overview" src="images/profile3.png" width=800></li>
-                        <li><img alt="overview" src="images/profile4.png" width=800></li>
-                    </ul>
-                </li>
-                <li id="error400"><b>Pagina 400</b></li>
-                <li style="list-style: none">
-                    <ul>
-                        <li>Pagina afișează eroarea <b>400 Cerere greșită</b>.</li>
-                        <li class="pictures" style="list-style: none"><img alt="overview" src="images/error400.png"
-                                                                           width=800>
-                        </li>
-                    </ul>
-                </li>
-                <li id="error404"><b>Pagina 404</b></li>
-                <li style="list-style: none">
-                    <ul>
-                        <li>Pagina afișează eroarea <b>404 Cerere greșită</b>.</li>
-                        <li class="pictures" style="list-style: none"><img alt="overview" src="images/error404.png"
-                                                                           width=800>
                         </li>
                     </ul>
                 </li>
@@ -500,25 +313,6 @@
                             utilizator din tabel.
                         </li>
                         <li class="pictures" style="list-style: none"><img alt="overview" src="images/admin5.png"
-                                                                           width=800>
-                        </li>
-                    </ul>
-                </li>
-                <li id="changepass"><b>Pagina de schimbare a parolei</b></li>
-                <li style="list-style: none">
-                    <ul>
-                        <li>Pagină afișează un formular numit <b>Resetare parolă</b>, unde se vor completa corespunzător
-                            câmpurile
-                            pentru a schimbă parolă veche cu cea nouă.
-                        </li>
-                        <li class="pictures" style="list-style: none"><img alt="overview" src="images/changePass.png"
-                                                                           width=800>
-                        </li>
-                        <li>Se va primi un mesaj ce confirmă această schimbare, putând reveni la profil prin acționarea
-                            butonului
-                            <b>Înapoi la profil</b>.
-                        </li>
-                        <li class="pictures" style="list-style: none"><img alt="overview" src="images/passChanged.png"
                                                                            width=800>
                         </li>
                     </ul>
