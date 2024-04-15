@@ -84,15 +84,13 @@
         <section id="introduction-purpose">
             <h4>1.1 Scop</h4>
             <p>
-                RoT (Romanian Traffic Signs Tutor) este o aplicație web dezvoltată de studenții menționați în secțiunea
+                MoX (Movies and TV Shows Explorer) este o aplicație web dezvoltată de studenții menționați în secțiunea
                 de Autori de la Facultatea de
                 Informatică a Universității Alexandru Ioan Cuza.
                 Scopul acestui document este acela de a prezenta o descriere detaliată a funcționalităților, precum și
                 de
                 specifica cerințele aplicației web. Această aplicație
-                va oferi utilizatorilor posibilitatea învățării legislației și a semnelor rutiere din România. Pe lângă
-                acestea, utilizatorului îi sunt
-                disponibile semnele rutiere din 5 alte țări: Anglia, Franța, Italia, Turcia și Islanda.
+                va oferi utilizatorilor posibilitatea de a cauta si a filtra seriale si filme, vizualizand o multitudine de detalii despre acestea.
             </p>
         </section>
         <section id="conventions">
@@ -124,23 +122,14 @@
         <section id="product-scope">
             <h4>1.4 Scopul Produsului</h4>
             <p>
-                Scopul aplicației este acela de a oferi utilizatorilor un soft educațional ce propune un mod de învățare
-                a
-                legislației și semnelor rutiere din România. Utilizatorii pot citi codul rutier, dar și întrebări
-                similare
-                celor din chestionarele auto, ce conț în explicații pentru fiecare varianta de răspuns. Totodată,
-                utilizatorii
-                pot rezolva și chestionare predefinite, conținând 26 de întrebări, în vederea pregătirii componenței
-                teoretice
-                a examenului pentru obținerea permisului de conducere. De asemenea, utilizatorii își pot crea un cont
-                pentru a
-                beneficia de restul funcționalităților RoT.
+                Scopul aplicației este acela de a oferi utilizatorilor un soft simplu si usor de utilizat pentru cautarea si filtrarea filmelor si serialelor.
+                Selectand un film/serial dorit, utilizatorul va avea posibilitatea de a vedea o multitudine de detalii despre acesta, de la durata, numar de episoade si genul programului, pana la buget, director si recenzii.
             </p>
         </section>
         <section id="references">
             <h4>1.5 Bibliografie</h4>
             <ul>
-                <li>Buraga Sabin-Corneliu, Site-ul Tehnologii Web, FII UAIC</li>
+                <li>Site-ul Tehnologii Web, FII UAIC</li>
                 <li>H Rick. IEEE-Template - GitHub</li>
             </ul>
         </section>
@@ -149,33 +138,24 @@
         <h3>2. Descriere Generală</h3>
         <section id="product-perspective">
             <h4>2.1 Perspectiva produsului</h4>
-            <p>RoT (Romanian Traffic Signs Tutor) este o aplicație dezvoltată în cadrul cursului de Tehnologii Web,
+            <p>MoX (Movies and TV Shows Explorer) este o aplicație dezvoltată în cadrul cursului de Tehnologii Web,
                 menită să
-                ofere un mod de învățare a legislației rutiere, a semnelor de circulație din România, dar și din alte
-                țări.
+                ofere un mod de cautare si gasire a serialelor si filmelor disponibile pe platformele Netflix si Disney+.
         </section>
         <section id="product-functions">
             <h4>2.2 Funcționalitățile produsului</h4>
             Fiecare utilizator va avea acces la urmatoarele funcționălități:
             <ul>
-                <li>să se înregistreze pe site.</li>
-                <li>să se autentifice pe site.</li>
-                <li>să își reseteze parola in cazul in care a uitat-o.</li>
-                <li>să consulte pagină "Acasă" și noutățile disponibile</li>
-                <li>să acceseze pagina "Legislație" pentru a accesa codul rutier, "Despre", "Ajutor"</li>
-                <li>să acceseze pagina "Semne de circulație" pentru a vizualiza semne rutiere atât din România, cât și
-                    din alte țări
+                <li>să consulte pagină "Acasă" și sa caute un film/serial</li>
+                <li>să acceseze pagina "Netflix" pentru a vizualiza lista de filme/seriale disponibile pe Netflix</li>
+                <li>să acceseze pagina "Disney" pentru a vizualiza lista de filme/seriale disponibile pe Disney+
                 </li>
                 <li>să acceseze pagina "Despre" pentru a accesa scurtă descriere a paginii web</li>
                 <li>să acceseze pagina "Ajutor" pentru a beneficia de sfaturi în vederea utilizării aplicației</li>
-                <li>dacă este <b>autentificat</b>, să acceseze pagină "Învață" și să rezolve întrebări</li>
-                <li>dacă este <b>autentificat</b>, să acceseze pagină "Chestionare" și să rezolve teste predefinite</li>
-                <li>dacă este <b>autentificat</b>, să își acceseze profilul și sa verifice statisticile personale</li>
-                <li>dacă utilizatorul are rol de <b>admin</b>, acesta poate șterge utilizatori din baza de date</li>
-                <li>dacă utilizatorul are rol de <b>admin</b>, acesta poate adăuga întrebări noi</li>
-                <li>dacă utilizatorul are rol de <b>admin</b>, acesta poate modifica întrebări deja existente</li>
-                <li>dacă utilizatorul are rol de <b>admin</b>, acesta poate adăuga chestionare noi</li>
-                <li>dacă utilizatorul are rol de <b>admin</b>, acesta poate modifica chestionare deja existente</li>
+                <li>dacă utilizatorul are rol de <b>admin</b>, acesta poate adăuga seriale noi</li>
+                <li>dacă utilizatorul are rol de <b>admin</b>, acesta poate modifica seriale deja existente</li>
+                <li>dacă utilizatorul are rol de <b>admin</b>, acesta poate adăuga filme noi</li>
+                <li>dacă utilizatorul are rol de <b>admin</b>, acesta poate modifica filme deja existente</li>
             </ul>
         </section>
         <section id="users">
@@ -185,45 +165,31 @@
                 <li>utilizatorii autentificați pot fi:</li>
                 <li style="list-style: none">
                     <ul>
-                        <li>orice categorie de oameni care doresc să învețe legislația rutieră și semne de circulație
-                            din România și nu numai.
+                        <li>admini care au dreptul de a adauga si modifica date despre filme/seriale.
                         </li>
                     </ul>
                 </li>
                 <li>
                     utilizatorii neautentificați pot fi:
                     <ul>
-                        <li>cursanți al școlilor de șoferi ce se pregătesc pentru susținerea probei teoretice a
-                            examenului de obținere a permisului de conducere.
+                        <li>orice persoana care doreste sa gaseasca un serial/film de vizionat, sau poate cauta un serial/film deja cunoscut pentru a se documenta in legatura cu anumite detalii despre acesta.
                         </li>
                     </ul>
                 </li>
             </ul>
             <h5>2.3.2 Caracteristici</h5>
             <ul>
-                <li>Utilizatorii care sunt <b> autentificați </b> pot accesa pagină de "Legislație", de "Semne de
-                    circulație",
+                <li>Utilizatorii care sunt <b> autentificați </b> pot accesa pagină de "Netflix", "Disney", "Pagina adminului"
                     dar și cele două pagini ce oferă detalii și sfaturi cu privire la aplicație, "Despre" și "Ajutor".
-                    Mai mult, aceștia pot rezolva întrebări (explicate) și teste predefinite. De asemenea, aceștia pot
-                    să își
-                    monitorizeze progresul prin cunoașterea numărului de întrebări/chestionare rezolvate, dar și din
-                    informații
-                    referitoare la procentajul de reușită sau media de timp; toate acestea fiind salvate la profilul
-                    fiecărui utilizator.
                 </li>
-                <li>Utilizatorii care nu sunt autentificați pot să vizualizeze și ei codul rutier (pagina de
-                    "Legislație") și
-                    "Semne de circulație", dar în schimb nu pot accesa modul de "Invață" și nici cel de "Chestionare".
-                    Așadar, aceștia pot să se înregistreze ca și utilizator și să beneficieze de toate
-                    funcționalitățile.
+                <li>Utilizatorii care nu sunt autentificați pot să vizualizeze și ei aceleasi pagini ca si adminul, inafara de "Pagina adminului", intrucat utilizatorii obisnuiti nu pot modifica datele site-ului.
                 </li>
             </ul>
         </section>
         <section id="operating-environment">
             <h4>2.4 Mediul de operare</h4>
             <p>
-                Produsul dezvoltat poate fi utilizat pe orice dispozitiv cu un browser web care suportă HTML5, CSS și
-                JavaScript.
+                Produsul dezvoltat poate fi utilizat pe orice dispozitiv cu un browser web care suportă HTML5 si CSS.
             </p>
         </section>
         <section id="documentation">
@@ -254,7 +220,7 @@
                 <li id="home-page"><b> Pagina de acasă</b></li>
                 <li style="list-style: none">
                     <ul>
-                        <li>Pagina are rolul de prezența ultimele noutăți, sfaturi și clasementele actualizate.</li>
+                        <li>Pagina are rolul de a intriga utilizatorul in a cauta un serial/film pentru a vedea functionalitatea acestuia.</li>
                         <li class="pictures" style="list-style: none"><img alt="overview" src="images/homePage.png"
                                                                            width=800>
                         </li>
@@ -263,7 +229,7 @@
                 <li id="about"><b>Pagina informativa</b></li>
                 <li style="list-style: none">
                     <ul>
-                        <li>Pagina are rolul de a introduce site-ul RoT pe scurt, prin menționarea unor mici detalii:
+                        <li>Pagina are rolul de a introduce site-ul MoX pe scurt, prin menționarea unor mici detalii:
                             tehnologii
                             utilizate, numele autorilor, scopul aplicației și bibliografia.
                         </li>
@@ -289,31 +255,7 @@
                                                                            width=800>
                         </li>
                         <li>Administratorul are capacitatea de a adaugă/modifică
-                            întrebări și/sau chestionare și de a șterge utilizatori din baza de date.
-                        </li>
-                        <li class="pictures" style="list-style: none"><img alt="overview" src="images/admin2.png"
-                                                                           width=800>
-                        </li>
-                        <li>Formularul <b>Creare întrebare</b> se va completa cu informațiile necesare, întrebarea
-                            urmand sa se
-                            salveze in baza de date. La fel se procedeaza si pentru chestionare.
-                        </li>
-                        <li class="pictures" style="list-style: none"><img alt="overview" src="images/admin3.png"
-                                                                           width=800>
-                        </li>
-                        <li>Formularul <b>Actualizare întrebare</b> se va completa cu <b>ID-ul</b> dorit, întrebarea
-                            urmand sa se
-                            salveze in baza de date printr-un formular ca la punctul precedent. La fel se procedeaza si
-                            pentru chestionare.
-                        </li>
-                        <li class="pictures" style="list-style: none"><img alt="overview" src="images/admin4.png"
-                                                                           width=800>
-                        </li>
-                        <li>Pentru a șterge un utilizator din baza de date, se va apasă butonul corespunzător fiecărui
-                            utilizator din tabel.
-                        </li>
-                        <li class="pictures" style="list-style: none"><img alt="overview" src="images/admin5.png"
-                                                                           width=800>
+                            filme/seriale din baza de date.
                         </li>
                     </ul>
                 </li>
