@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
+    <title>MoX</title>
     <meta charset="UTF-8">
 </head>
 <body>
@@ -242,8 +243,7 @@
                         <li>Pagina are rolul de a prezenta câteva sfaturi pentru a putea beneficia de o experienta
                             completa pe site.
                         </li>
-                        <li class="pictures" style="list-style: none"><img alt="overview" src="Images/helpPage.png"
-                                                                           width=800
+                        <li class="pictures" style="list-style: none"><img alt="overview" src="Images/helpPage.png" width=800>
                         </li>
                     </ul>
                 </li>
