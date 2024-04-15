@@ -5,14 +5,37 @@
         <title>MoX</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100..800&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
             <img class="logo" src="..\Images\logo.png" alt="MoX Logo">
         </header>
         <div class="wrapper">
-            <img class="back-img" src="..\Images\mvclip.jpg" alt="Home Background">
-            <img class="rotated-img" src="..\Images\mvclip_rotated.jpg" alt="Home Background">
+            <div class="background-wrapper">
+                <picture class="background-img">
+                    <source srcset="..\Images\mvclip_rotated.jpg" alt="Home Background" media="(max-aspect-ratio: 4/5)" style="width: 120%; height: 120vh;">
+                    <img src="..\Images\mvclip.jpg" alt="Home Background Rotated" style="width: 120%; height: 120vh;">
+                </picture>
+            </div>
+            <div class="pages-buttons">
+                <ul>
+                    <li><a href="Netflix.html">Netflix</a></li>
+                    <li><a href="Disney.html">Disney</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Help.html">Help</a></li>
+                </ul>
+            </div>
+            <div class="overlay-text">
+                <h2>Just think of a movie...</h2>
+                <p>And we'll tell you everything about it!</p>
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Search..." class="search-input">
+                <button class="search-button">Go</button>
+            </div>
         </div>
     </body>
 </html>
