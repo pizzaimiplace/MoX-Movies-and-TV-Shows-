@@ -42,7 +42,7 @@
                         <li><a href="#home-page">3.1.2 Pagina de acasă </a></li>
                         <li><a href="#help">3.1.3 Pagina de ajutor </a></li>
                         <li><a href="#about">3.1.4 Pagina informativa</a></li>
-                        <li><a href="#admin">3.1.5 Pagina administratorului </a></li>
+                        <li><a href="#admin">3.1.5 Pagina de autentificare a administratorului </a></li>
                     </ul>
                 </li>
             </ul>
@@ -246,15 +246,12 @@
                         </li>
                     </ul>
                 </li>
-                <li id="admin"><b>Pagina Administratorului</b></li>
+                <li id="admin"><b>Pagina de autentificare a Administratorului</b></li>
                 <li style="list-style: none">
                     <ul>
-                        <li>Pagina afișează interfață pentru <b>adminstrator</b>.</li>
-                        <li class="pictures" style="list-style: none"><img alt="overview" src="Images/admin1.png"
+                        <li>Pagina afișează interfață pentru autentificare <b>adminstrator</b>.</li>
+                        <li class="pictures" style="list-style: none"><img alt="overview" src="Images/adminLogin.png"
                                                                            width=800>
-                        </li>
-                        <li>Administratorul are capacitatea de a adaugă/modifică
-                            filme/seriale din baza de date.
                         </li>
                     </ul>
                 </li>
