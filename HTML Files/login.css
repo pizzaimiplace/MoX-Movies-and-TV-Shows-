@@ -42,7 +42,7 @@ header{
     overflow-x: hidden;
 }
 .authentication-block{
-    border: 5px solid;
+    border: 3px solid;
     margin: auto;
     position: absolute;
     top: 30%;
@@ -52,6 +52,10 @@ header{
     background-color: rgba(55, 26, 84, 0.8);
     color: white;
     border-color: black;
+}
+.authentication-element{
+    text-align: center;
+    padding-bottom: 10px;
 }
 a:link {
     text-decoration: none;
