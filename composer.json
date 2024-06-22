@@ -1,0 +1,10 @@
+{
+    "name": "daniel/daniel",
+    "description": "daniel",
+    "type": "project",
+    "require": {
+        "guzzlehttp/guzzle": "8.0.x-dev"
+    },
+    "license": "",
+    "minimum-stability": "dev"
+}
