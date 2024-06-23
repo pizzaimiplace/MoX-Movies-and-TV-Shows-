@@ -63,7 +63,7 @@ if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['pass
         } else {
             $sqlInsert = "INSERT INTO accounts (username, password, email)
                 VALUES (?, ?, ?)";
-            if ($conn->execute_query($sqlInsert, [$uname, $pass, $email]) !== TRUE) {
+            if ($conn->execute_query($sqlInsert, [$uname, $pass, $email]) === TRUE) {
                 header("Location: Register.php?success=true");
                 exit();
             } else {
