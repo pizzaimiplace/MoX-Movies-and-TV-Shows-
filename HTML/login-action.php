@@ -13,10 +13,10 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
     $pass = validate($_POST['password']);
 
     if (empty($uname)) {
-        header("Location: error.php?error=User Name is required");
+        header("Location: Login.php?error=req-user");
         exit();
     } else if (empty($pass)) {
-        header("Location: error.php?error=Password is required");
+        header("Location: Login.php?error=req-pass");
         exit();
     } else {
         include "database-connect.php";
@@ -32,18 +32,17 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
                 header("Location: Home.php");
                 exit();
             } else {
-                header("Location: error.php?error=Incorect User name or password");
+                header("Location: Login.php?error=wrong-user-or-pass");
                 exit();
-
             }
 
         } else {
-            header("Location: error.php?error=Incorect User name or password");
+            header("Location: Login.php?error=wrong-user-or-pass");
             exit();
         }
     }
 } else {
-    header("Location: error.php?All fields must be filled");
+    header("Location: Login.php?error=unfilled-fields");
     exit();
 
 }

@@ -57,6 +57,16 @@ header{
     text-align: center;
     padding-bottom: 10px;
 }
+.authentication-error{
+    text-align: center;
+    color: red;
+    padding-bottom: 10px;
+}
+.authentication-success{
+    text-align: center;
+    color: green;
+    padding-bottom: 10px;
+}
 a:link {
     text-decoration: none;
 }

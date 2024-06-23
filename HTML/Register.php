@@ -1,4 +1,22 @@
 <!DOCTYPE html>
+<?php
+function hideError($errorType)
+{
+	if (!isset($_GET["error"])) {
+		echo ("hidden");
+	} else if ($_GET["error"] != $errorType) {
+		echo ("hidden");
+	}
+}
+function hideSuccess()
+{
+	if (!isset($_GET["success"])) {
+		echo ("hidden");
+	} else if ($_GET["success"] != "true") {
+		echo ("hidden");
+	}
+}
+?>
 <html lang="ro">
 
 <head>
@@ -68,6 +86,36 @@
                 <div class="authentication-element">
                     <a href="Login.php"> Ai deja cont? Conectează-te acum!</a>
                 </div>
+                <div class="authentication-error" <?php hideError("req-user"); ?>>
+					Username is required
+				</div>
+				<div class="authentication-error" <?php hideError("req-pass"); ?>>
+					Password is required
+				</div>
+				<div class="authentication-error" <?php hideError("req-email"); ?>>
+					Email is required
+				</div>
+				<div class="authentication-error" <?php hideError("req-pass-conf"); ?>>
+					Password confirmation is required
+				</div>
+				<div class="authentication-error" <?php hideError("wrong-email-format"); ?>>
+					Invalid email
+				</div>
+				<div class="authentication-error" <?php hideError("wrong-pass-format"); ?>>
+                    Password must be at least 8 characters long and contain a letter and a digit
+				</div>
+                <div class="authentication-error" <?php hideError("pass-not-matching"); ?>>
+					Passwords don't match
+				</div>
+                <div class="authentication-error" <?php hideError("user-or-email-in-use"); ?>>
+					Username or e-mail is already used
+				</div>
+				<div class="authentication-error" <?php hideError("unfilled-fields"); ?>>
+					All fields must be completed
+				</div>
+				<div class="authentication-success" <?php hideSuccess(); ?>>
+                    <a href="Login.php" style="color: green;"> Te-ai inregistrat cu succes! Mergi la pagina de login.</a>
+				</div>
                 <div class="authentication-element">
                     <button type="submit" style="align-content: center;">Înregistrare</button>
                 </div>

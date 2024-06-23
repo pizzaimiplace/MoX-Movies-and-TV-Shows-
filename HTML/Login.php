@@ -1,4 +1,14 @@
 <!DOCTYPE html>
+<?php
+function hideError($errorType)
+{
+	if (!isset($_GET["error"])) {
+		echo ("hidden");
+	} else if ($_GET["error"] != $errorType) {
+		echo ("hidden");
+	}
+}
+?>
 <html lang="ro">
 
 <head>
@@ -59,6 +69,18 @@
 				</div>
 				<div class="authentication-element">
 					<a href="Register.php"> Nu ai cont? Crează-ți acum!</a>
+				</div>
+				<div class="authentication-error" <?php hideError("req-user"); ?>>
+					Username is required
+				</div>
+				<div class="authentication-error" <?php hideError("req-pass"); ?>>
+					Password is required
+				</div>
+				<div class="authentication-error" <?php hideError("wrong-user-or-pass"); ?>>
+					Incorect username or password
+				</div>
+				<div class="authentication-error" <?php hideError("unfilled-fields"); ?>>
+					All fields must be completed
 				</div>
 				<div class="authentication-element">
 					<button type="submit" style="align-content: center;">Autentificare</button>
