@@ -1,0 +1,271 @@
+@font-face {
+    font-family: myFont;
+    src: url(../Fonts/AnekMalayalam.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: myFont;
+}
+header{
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    background-image: linear-gradient(155deg, #BC0000, #391D54);
+    width: 100%;
+    border-bottom-style: solid;
+    border-width: 3px;
+}
+header p{
+
+    display: flex;
+    margin-left: auto;
+    margin-right: 10vw;
+    color: white;
+    align-items: center;
+}
+h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+p{
+    font-size: 20px;
+}
+.logo{
+    display: block;
+    width: 15%;
+    padding: 20px 10px ;
+}
+.background-wrapper-netflix{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: black;
+}
+.background-wrapper-netflix img{
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+    margin-top: 20%;
+}
+.search-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap; /* Changed from wrap to nowrap to keep elements side by side */
+    margin-top: 70%;
+    top: 50%;
+}
+.search-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: #920000;
+    margin: 0 10px; /* Add some spacing between the elements */
+    width: 70%; /* Adjust width as needed to ensure a good layout */
+    position: relative; /* Changed to relative to avoid overlap */
+    ::placeholder {
+        color: white;
+    }
+}
+.search-input{
+    background-color: #A80000;
+    color: white;
+    border: none;
+    padding: 0.3vh 10px;
+    width: 90%;
+    outline: none;
+}
+.search-button{
+    background-color: #830000;
+    color:white;
+    border: none;
+    padding: 0.3vh 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.search-filters{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: #920000;
+    margin: 0 10px;
+    width: 7%;
+}
+.overlay-text{
+    color:#fff;
+    position: absolute;
+    margin-top: 10%;
+    top: 25%;
+    right: 20%;
+    left: 20%;
+}
+.wrapper{
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.pages-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 20%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    font-size: 20px;
+}
+.button-list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.page-button{
+    float: left;
+    margin: 0 auto;
+    text-align: center;
+}
+.pages-buttons-header{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    visibility: hidden;
+}
+.page-button a{
+    display: block;
+    text-decoration: none;
+    margin: 0vw 5vw;
+    color: #fff;
+}
+.central-text{
+    position: absolute;
+    display:flex;
+    margin-top: 10%;
+    left: 20%;
+    right: 20%;
+    top: 20%;
+}
+.netflix-shows {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust the gap as needed */
+    position: absolute;
+    margin: 20px 20px;
+    width: 90%;
+}
+.netflix-shows p{
+    display: flex;
+    color: white;
+}
+.n-show{
+    width: 45%;
+}
+.n-show p{
+    justify-content: center;
+}
+.n-info{
+    width: 45%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+.n-info p{
+    margin: 10px 0px;
+}
+.n-description{
+    background-color: #610404;
+    border: 1px solid white;
+    border-radius: 2%;
+    box-shadow: 0px 4px 8px rgb(193 12 12);
+    padding: 6px;
+}
+.n-description p{
+    display: flex;
+    color: white;
+}
+
+.show-card {
+    border: 1px solid white;
+    border-radius: 1%;
+    flex: 1 1 calc(50% - 20px); /* Calculate the width based on the gap */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin: 10px 0px;
+}
+
+.show-card img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+.n-director{
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    margin: 10px;
+}
+.n-director p{
+    font-size: 1em;
+    word-break: break-word;
+}
+.n-director img{
+    border-radius: 50%;
+    border: 1px solid wheat;
+}
+.n-cast {
+    display: flex;
+    flex-wrap: wrap;
+}
+.cast-member{
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    flex: 0 0 calc(25% - 20px); /* 33.33% width for each member with margin */
+    margin: 10px; /* Adjust margin as needed */
+    text-align: center; /* Center align content */
+}
+.cast-member p{
+    font-size: 1em;
+    word-break: break-word;
+}
+.cast-member img{
+    border-radius: 50%;
+    border: 1px solid wheat;
+}
+.n-bonus-info{
+    display: flex;
+    flex-direction: row;
+}
+.n-bonus-info p{
+    margin: 10px;
+}
+
+@media only screen and (min-width: 768px)  {
+    .logo{
+        display: block;
+        width: 5%;
+        padding: 20px 10px ;
+    }
+    .pages-buttons{
+        visibility: hidden;
+    }
+    .pages-buttons-header{
+        visibility: visible;
+    }
+}
