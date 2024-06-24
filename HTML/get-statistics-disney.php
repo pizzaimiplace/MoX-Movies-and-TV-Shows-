@@ -44,6 +44,12 @@ $showTypes = array(
 $ratingsStatistics = array_fill(0, count($ratingsList), 0);
 $genresStatistics = array_fill(0, count($genresList), 0);
 $typeStatistics = array_fill(0, count($showTypes), 0);
+for ($i = 0; $i < count($ratingsList); $i++)
+  $ratingsStatistics[$i] = (int) 0;
+for ($i = 0; $i < count($genresList); $i++)
+  $genresStatistics[$i] = (int) 0;
+for ($i = 0; $i < count($showTypes); $i++)
+  $typeStatistics[$i] = (int) 0;
 while ($row = $result->fetch_assoc()) {
   for ($i = 0; $i < count($ratingsList); $i++) {
     foreach ($ratingsList[$i] as $rating) {
@@ -54,9 +60,6 @@ while ($row = $result->fetch_assoc()) {
   $genres = trim($row["listed_in"]);
   $genresArray = explode(',', $genres);
   $genresArray = array_map('trim', $genresArray);
-  foreach ($genreNumbers as $iter)
-    if ($_GET["genre"][$iter] == "on")
-      $ok = TRUE;
   for ($i = 0; $i < count($genresList); $i++) {
     $ok = false;
     foreach ($genresList[$i] as $iter_1) {
@@ -66,7 +69,7 @@ while ($row = $result->fetch_assoc()) {
       }
     }
     if ($ok == TRUE)
-      $genresStatistics[$i]++;
+      $genresStatistics[$i]=$genresStatistics[$i]+1;
   }
   for ($i = 0; $i < count($showTypes); $i++) {
     if ($showTypes[$i] == $row["type"])
