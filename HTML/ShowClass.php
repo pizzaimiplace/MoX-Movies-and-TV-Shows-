@@ -80,6 +80,8 @@ function setPosterForShow(&$show, $apiKey)
     $fullPosterPath = 'https://image.tmdb.org/t/p/w500' . $posterPath;
     $show->posterPath = $fullPosterPath;
   }
-  $show->posterPath =  '../Images/NoPoster.png';
+  else{
+    $show->posterPath =  '../Images/NoPoster.png';
+  }
 }
 ?>

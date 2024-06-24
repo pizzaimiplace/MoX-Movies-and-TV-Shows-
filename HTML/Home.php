@@ -40,11 +40,10 @@
             <h1>Just think of a movie...</h1>
             <p>And we'll tell you everything about it!</p>
         </div>
-        <form action="test.php" method="GET" class="search-container">
+        <form action="netflix-show.php" method="GET" class="search-container">
             <input type="text" placeholder="Search..." class="search-input" name="title">
             <button class="search-button">Go</button>
         </form>
-
     </div>
 </body>
 

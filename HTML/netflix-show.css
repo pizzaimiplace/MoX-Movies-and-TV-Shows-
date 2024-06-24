@@ -8,19 +8,6 @@
     overflow-x: hidden;
     font-family: myFont;
 }
-.show-more{
-    display: flex;
-    position: relative;
-    justify-content: center;
-    margin: 5vh;
-}
-.show-more-input{
-    background-color: black;
-    color: white;
-    border: 1px solid white;
-    border-radius: 10px;
-    padding: 10px;
-}
 @media (min-width: 950px) {
     header{
         position: fixed;
@@ -30,15 +17,14 @@
         width: 100%;
         border-bottom-style: solid;
         border-width: 3px;
-        overflow-y: hidden;
     }
     header p{
+
         display: flex;
         margin-left: auto;
         margin-right: 10vw;
         color: white;
         align-items: center;
-        text-align: center;
     }
     h1{
         font-size: 30px;
@@ -46,6 +32,7 @@
     }
     p{
         font-size: 20px;
+        color: white;
     }
     .logo{
         display: block;
@@ -57,13 +44,12 @@
         height: 100vh;
         position: fixed;
         background-color: black;
-        overflow-y: hidden;
     }
     .background-wrapper-netflix img{
         display: block;
         width: 100%;
         height: auto;
-        opacity: 0.6;
+        opacity: 0.3;
     }
     .search-wrapper {
         position: relative;
@@ -71,22 +57,24 @@
         align-items: center;
         justify-content: center;
         flex-direction: row;
-        flex-wrap: nowrap; /* Changed from wrap to nowrap to keep elements side by side */
-        margin-top: 15%;
+        flex-wrap: nowrap;
+        margin-top: 70%;
         top: 50%;
     }
     .search-container{
         display: flex;
         align-items: center;
+        justify-content: center;
         border: 1px solid;
         border-radius: 3px;
         overflow: hidden;
         background-color: #920000;
-        margin: 0 10px; /* Add some spacing between the elements */
-        position: relative; /* Changed to relative to avoid overlap */
-        ::placeholder {
-            color: white;
-        }
+        margin: 0 10px;
+        width: 70%; 
+        position: relative; 
+    }
+    .search-container::placeholder {
+        color: white;
     }
     .search-input{
         background-color: #A80000;
@@ -113,7 +101,7 @@
         overflow: hidden;
         background-color: #920000;
         margin: 0 10px;
-        width: 3%;
+        width: 7%;
     }
     .overlay-text{
         color:#fff;
@@ -132,7 +120,7 @@
         align-items: center;
         justify-content: center;
         position: relative;
-        margin-top: 8%;
+        margin-top: 5%;
         left:50%;
         transform: translate(-50%, -50%);
         width: 100%;
@@ -170,29 +158,61 @@
         right: 20%;
         top: 20%;
     }
+    .netflix-shows-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 20px; 
+        position: absolute;
+        margin: 20px 40px;
+    }
     .netflix-shows {
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
-        gap: 20px; /* Adjust the gap as needed */
-        position: relative;
-        margin: 20px 20px;
+        gap: 20px; 
+        margin: 20px 40px;
+        justify-content: center;
     }
     .netflix-shows p{
         display: flex;
         color: white;
     }
     .n-show{
-        width: 50%;
+        width: 25%;
+    }
+    .n-show p{
+        justify-content: center;
+    }
+    .n-info{
+        width: 25%;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+    }
+    .n-info p{
+        margin: 10px 0px;
+    }
+    .n-description{
+        background-color: #610404;
+        border: 1px solid white;
+        border-radius: 2%;
+        box-shadow: 0px 4px 8px rgb(193 12 12);
+        padding: 6px;
+    }
+    .n-description p{
+        display: flex;
+        color: white;
     }
 
     .show-card {
         border: 1px solid white;
         border-radius: 1%;
-        flex: 0 0 calc(25% - 20px); /* Calculate the width based on the gap */
+        flex: 1 1 calc(50% - 20px); 
         display: flex;
         justify-content: center;
         align-items: center;
-        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        box-sizing: border-box;
+        margin: 10px 0px;
     }
 
     .show-card img {
@@ -200,9 +220,58 @@
         max-width: 100%;
         height: auto;
     }
+    .n-director-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .n-director{
+        display: flex;
+        flex-wrap: wrap;
+        width: 20%;
+        margin: 10px;
+        justify-content: center;
+    }
+    .n-director p{
+        font-size: 1em;
+        overflow-wrap: break-word;
+    }
+    .n-director img{
+        border-radius: 50%;
+        border: 1px solid wheat;
+    }
+    .n-cast {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .cast-member{
+        display: flex;
+        flex-direction: column;
+        width: 10%;
+        flex: 0 0 calc(15% - 20px);
+        margin: 10px;
+        text-align: center;
+    }
+    .cast-member p{
+        font-size: 1em;
+        overflow-wrap: break-word;
+    }
+    .cast-member img{
+        border-radius: 50%;
+        border: 1px solid wheat;
+    }
+    .n-bonus-info{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 50vh;
+        margin: 5vh;
+    }
+    .n-bonus-info p{
+        margin: 10px;
+    }
 }
 
-@media only screen and (max-width: 950px)  {
+@media (max-width: 950px) {
     header{
         position: fixed;
         z-index: 1000;
@@ -211,10 +280,9 @@
         width: 100%;
         border-bottom-style: solid;
         border-width: 3px;
-        overflow-y: hidden;
     }
     header p{
-        text-align: center;
+
         display: flex;
         margin-left: auto;
         margin-right: 10vw;
@@ -227,6 +295,7 @@
     }
     p{
         font-size: 20px;
+        color: white;
     }
     .logo{
         display: block;
@@ -238,13 +307,13 @@
         height: 100vh;
         position: fixed;
         background-color: black;
-        overflow-y: hidden;
     }
     .background-wrapper-netflix img{
         display: block;
         width: 100%;
         height: auto;
-        opacity: 0.6;
+        opacity: 0.3;
+        margin-top: 20%;
     }
     .search-wrapper {
         position: relative;
@@ -253,12 +322,13 @@
         justify-content: center;
         flex-direction: row;
         flex-wrap: nowrap; /* Changed from wrap to nowrap to keep elements side by side */
-        margin-top: 50%;
+        margin-top: 70%;
         top: 50%;
     }
     .search-container{
         display: flex;
         align-items: center;
+        justify-content: center;
         border: 1px solid;
         border-radius: 3px;
         overflow: hidden;
@@ -266,9 +336,9 @@
         margin: 0 10px; /* Add some spacing between the elements */
         width: 70%; /* Adjust width as needed to ensure a good layout */
         position: relative; /* Changed to relative to avoid overlap */
-        ::placeholder {
-            color: white;
-        }
+    }
+    .search-container::placeholder {
+        color: white;
     }
     .search-input{
         background-color: #A80000;
@@ -343,7 +413,6 @@
         text-decoration: none;
         margin: 0vw 5vw;
         color: #fff;
-        overflow-x: visible;
     }
     .central-text{
         position: absolute;
@@ -353,11 +422,19 @@
         right: 20%;
         top: 20%;
     }
+    .netflix-shows-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 20px; /* Adjust the gap as needed */
+        position: absolute;
+        margin: 20px 20px;
+        width: 95%;
+    }
     .netflix-shows {
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
         gap: 20px; /* Adjust the gap as needed */
-        position: relative;
         margin: 20px 20px;
     }
     .netflix-shows p{
@@ -365,26 +442,93 @@
         color: white;
     }
     .n-show{
-        width: 50%;
+        width: 45%;
     }
-    
+    .n-show p{
+        justify-content: center;
+    }
+    .n-info{
+        width: 45%;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+    }
+    .n-info p{
+        margin: 10px 0px;
+    }
+    .n-description{
+        background-color: #610404;
+        border: 1px solid white;
+        border-radius: 2%;
+        box-shadow: 0px 4px 8px rgb(193 12 12);
+        padding: 6px;
+    }
+    .n-description p{
+        display: flex;
+        color: white;
+    }
+
     .show-card {
         border: 1px solid white;
         border-radius: 1%;
-        flex: 0 0 calc(50% - 20px); /* Calculate the width based on the gap */
+        flex: 1 1 calc(50% - 20px); /* Calculate the width based on the gap */
         display: flex;
         justify-content: center;
         align-items: center;
         box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        margin: 10px 0px;
     }
-    
+
     .show-card img {
         width: 100%;
         max-width: 100%;
         height: auto;
     }
+    .n-director{
+        display: flex;
+        flex-wrap: wrap;
+        width: 30%;
+        margin: 10px;
+        justify-content: center;
+    }
+    .n-director p{
+        font-size: 1em;
+        overflow-wrap: break-word;
+    }
+    .n-director img{
+        border-radius: 50%;
+        border: 1px solid wheat;
+    }
+    .n-cast {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .cast-member{
+        display: flex;
+        flex-direction: column;
+        width: 10%;
+        flex: 0 0 calc(25% - 20px); /* 33.33% width for each member with margin */
+        margin: 10px; /* Adjust margin as needed */
+        text-align: center; /* Center align content */
+    }
+    .cast-member p{
+        font-size: 1em;
+        overflow-wrap: break-word;
+    }
+    .cast-member img{
+        border-radius: 50%;
+        border: 1px solid wheat;
+    }
+    .n-bonus-info{
+        display: flex;
+        flex-direction: row;
+    }
+    .n-bonus-info p{
+        margin: 10px;
+    }
 }
-@media only screen and (min-width: 768px)  {
+
+@media (min-width: 768px)  {
     .logo{
         display: block;
         width: 5%;
@@ -395,8 +539,5 @@
     }
     .pages-buttons-header{
         visibility: visible;
-    }
-    .search-wrapper{
-        margin-top: 30%;
     }
 }

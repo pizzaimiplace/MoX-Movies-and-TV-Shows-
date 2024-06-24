@@ -114,7 +114,7 @@ function hideSuccess()
 					All fields must be completed
 				</div>
 				<div class="authentication-success" <?php hideSuccess(); ?>>
-                    <a href="Login.php" style="color: green;"> Te-ai inregistrat cu succes! Mergi la pagina de login.</a>
+                    <a href="Login.php" style="color: #00ff00;"> Te-ai inregistrat cu succes! Mergi la pagina de login.</a>
 				</div>
                 <div class="authentication-element">
                     <button type="submit" style="align-content: center;">Înregistrare</button>

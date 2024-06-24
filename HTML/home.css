@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    overflow-y: hidden;
     font-family: myFont;
 }
 header{
@@ -98,6 +99,7 @@ p{
     margin: 0;
     display: flex;
     justify-content: center;
+    overflow: visible;
 }
 .page-button{
     float: left;
