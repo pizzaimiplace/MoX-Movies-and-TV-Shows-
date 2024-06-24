@@ -193,6 +193,7 @@
         justify-content: center;
         align-items: center;
         box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        background-color: azure;
     }
 
     .show-card img {
@@ -376,6 +377,7 @@
         justify-content: center;
         align-items: center;
         box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        background-color: azure;
     }
     
     .show-card img {

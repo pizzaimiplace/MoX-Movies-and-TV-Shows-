@@ -71,10 +71,10 @@ while ($count > 0 && ($row = $result->fetch_assoc())) {
                 <div class="search-filters">
                     <img src="../Images/3lines.png" alt="Filters">
                 </div>
-                <div class="search-container">
-                    <input type="text" placeholder="Search..." class="search-input">
+                <form action="netflix-show.php" method="GET" class="search-container">
+                    <input type="text" placeholder="Search..." class="search-input" name="title">
                     <button class="search-button">Go</button>
-                </div>
+                </form>
             </div>
             <div class="netflix-shows">
                 <?php foreach ($showsList as $show): ?>
