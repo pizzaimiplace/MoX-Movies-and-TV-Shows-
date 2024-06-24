@@ -80,4 +80,6 @@ $disneyStatistics = [];
 $disneyStatistics["rating"]=$ratingsStatistics;
 $disneyStatistics["genres"]=$genresStatistics;
 $disneyStatistics["type"]=$typeStatistics;
+
+echo json_encode($disneyStatistics);
 ?>

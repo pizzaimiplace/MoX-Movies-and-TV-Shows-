@@ -62,7 +62,7 @@ function hideSuccess()
             </ul>
         </div>
         <div>
-            <form action="register-action.php" class="authentication-block" method="POST">
+            <form action="register-action.php" class="authentication-block" method="POST"></form>
                 <div class="authentication-element">
                     <h1 style="text-align: center;">Autentificare</h1>
                 </div>
@@ -120,7 +120,6 @@ function hideSuccess()
                     <button type="submit" style="align-content: center;">Înregistrare</button>
                 </div>
         </div>
-    </div>
     </div>
 </body>
 
