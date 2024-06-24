@@ -101,14 +101,14 @@ while ($count > 0 && ($row = $result->fetch_assoc())) {
 }
 
 
-var_dump($showsList);
+//var_dump($showsList);
 ?>
 <html>
 <form action="NetflixShows.php" method="GET">
     <input id="clickMe" type="submit" value="clickme">
     <input type="number" value="<?php getNextCount(); ?>" id="count" name="count" hidden>
     <br>
-    <input id="rating-pg13" type="checkbox" name="rating[0]">
+    <input id="rating-pg13" type="checkbox" name="rating[0]">PG-13</input>
     <input id="rating-pg" type="checkbox" name="rating[1]">
     <input id="rating-ma" type="checkbox" name="rating[2]">
     <input id="rating-tv14" type="checkbox" name="rating[3]">

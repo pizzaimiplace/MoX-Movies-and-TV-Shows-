@@ -72,7 +72,7 @@ $result = $conn->query($sql);
 //$row = getRowById($result, $_GET['show_id']);
 $row = getRowByTitle($result, $_GET["title"]);
 $show = new Show($row["show_id"], $row["type"], $row["title"], $row["director"], $row["cast"], $row["country"], $row["date_added"], $row["release_year"], $row["rating"], $row["duration"], $row["listed_in"], $row["description"]);
-//var_dump($show);
+
 function getPosterByTitle($title, $apiKey)
 {
   $client = new \GuzzleHttp\Client();
@@ -92,9 +92,11 @@ function getPosterByTitle($title, $apiKey)
 
   if (isset($data['results']) && count($data['results']) > 0) {
     $movie = $data['results'][0];
-    $posterPath = $movie['poster_path'];
-    $fullPosterPath = 'https://image.tmdb.org/t/p/w500' . $posterPath;
-    return $fullPosterPath;
+    if(!empty($movie['poster_path'])){
+      $posterPath = $movie['poster_path'];
+      $fullPosterPath = 'https://image.tmdb.org/t/p/w500' . $posterPath;
+      return $fullPosterPath;
+    }
   }
   return '../Images/NoPoster.png';
 }
@@ -130,18 +132,15 @@ function getActorByName($name, $apiKey)
 
 function getCastArray($cast)
 {
-  // Trim the input to remove any leading or trailing whitespace
   $cast = trim($cast);
 
-  // Split the string by commas into an array
   $castArray = explode(',', $cast);
 
-  // Trim whitespace from each name in the array
   $castArray = array_map('trim', $castArray);
 
   return $castArray;
 }
-$castArray = getCastArray($row["cast"]);
+$castArray = getCastArray($show->cast);
 $conn->close();
 ?>
 <!DOCTYPE html>

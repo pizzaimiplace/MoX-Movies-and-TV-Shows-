@@ -76,9 +76,14 @@ function setPosterForShow(&$show, $apiKey)
 
   if (isset($data['results']) && count($data['results']) > 0) {
     $movie = $data['results'][0];
-    $posterPath = $movie['poster_path'];
-    $fullPosterPath = 'https://image.tmdb.org/t/p/w500' . $posterPath;
-    $show->posterPath = $fullPosterPath;
+    if(!empty($movie['poster_path'])){
+      $posterPath = $movie['poster_path'];
+      $fullPosterPath = 'https://image.tmdb.org/t/p/w500' . $posterPath;
+      $show->posterPath = $fullPosterPath;
+    }
+    else{
+      $show->posterPath =  '../Images/NoPoster.png';
+    }
   }
   else{
     $show->posterPath =  '../Images/NoPoster.png';
