@@ -65,14 +65,9 @@ include "database-connect.php";
 $sql = "SELECT * FROM disney_titles";
 $result = $conn->query($sql);
 
-// output data of each row
-/*while($row = $result->fetch_assoc()) {
-  echo "id: " . $row["show_id"]. " - title: " . $row["title"]. "<br>";
-}*/
-//$row = getRowById($result, $_GET['show_id']);
 $row = getRowByTitle($result, $_GET["title"]);
 $show = new Show($row["show_id"], $row["type"], $row["title"], $row["director"], $row["cast"], $row["country"], $row["date_added"], $row["release_year"], $row["rating"], $row["duration"], $row["listed_in"], $row["description"]);
-//var_dump($show);
+
 function getPosterByTitle($title, $apiKey)
 {
   $client = new \GuzzleHttp\Client();
@@ -130,13 +125,10 @@ function getActorByName($name, $apiKey)
 
 function getCastArray($cast)
 {
-  // Trim the input to remove any leading or trailing whitespace
   $cast = trim($cast);
 
-  // Split the string by commas into an array
   $castArray = explode(',', $cast);
 
-  // Trim whitespace from each name in the array
   $castArray = array_map('trim', $castArray);
 
   return $castArray;
@@ -144,6 +136,7 @@ function getCastArray($cast)
 $castArray = getCastArray($row["cast"]);
 $conn->close();
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 

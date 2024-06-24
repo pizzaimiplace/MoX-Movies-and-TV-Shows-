@@ -80,4 +80,6 @@ $netflixStatistics = [];
 $netflixStatistics["rating"] = $ratingsStatistics;
 $netflixStatistics["genres"] = $genresStatistics;
 $netflixStatistics["type"] = $typeStatistics;
+
+echo json_encode($netflixStatistics);
 ?>
