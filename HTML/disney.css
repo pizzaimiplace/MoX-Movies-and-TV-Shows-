@@ -5,7 +5,6 @@
 * {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
     font-family: myFont;
 }
 .show-more{
@@ -21,6 +20,25 @@
     border-radius: 10px;
     padding: 10px;
 }
+.search-filters img{
+    width: -webkit-fill-available;
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+.dropdown.show{
+    display: block;
+    margin-right: 10vh;
+}
+.dropdown input {
+    margin: 4px 0;
+}
 @media (min-width: 950px) {
     header{
         position: fixed;
@@ -30,7 +48,6 @@
         width: 100%;
         border-bottom-style: solid;
         border-width: 3px;
-        overflow-y: hidden;
     }
     header p{
         display: flex;
@@ -212,7 +229,6 @@
         width: 100%;
         border-bottom-style: solid;
         border-width: 3px;
-        overflow-y: hidden;
     }
     header p{
         text-align: center;

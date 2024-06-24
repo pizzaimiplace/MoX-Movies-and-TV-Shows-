@@ -43,7 +43,7 @@
                     <h3 class="section-header">Cum se foloseste MoX?</h3>
                     <div class="section-text">
                         <p>
-                           MoX are 5 pagini principale: Home, Netflix, Disney, About si Help. Home este pagina introductiva a site-ului unde se regasesc toate celelalte pagini. Paginile de Netflix si Disney contin seriale si filme disponibile pe platformele lor respective. About contine detalii despre rolul si creearea site-ului.
+                           MoX are 7 pagini principale: Home, Login, Register, Netflix, Disney, About si Help. Home este pagina introductiva a site-ului unde se regasesc toate celelalte pagini. Login/Register sunt paginile cu rolul de creeare a unul cont pentru a utiliza platforma. Paginile de Netflix si Disney contin seriale si filme disponibile pe platformele lor respective. About contine detalii despre rolul si creearea site-ului.
                         </p>
                     </div>
                 </div>
@@ -51,7 +51,7 @@
                     <h3 class="section-header">Cum pot gasi un film sau serial bazat pe anumite preferinte?</h3>
                     <div class="section-text">
                         <p>
-                            Paginile Netflix si Disney prezinta un sistem de filtrate a serialelor/filmelor dupa gen, limba, rating, user score si alte optiuni.
+                            Paginile Netflix si Disney prezinta un sistem de filtrate a serialelor/filmelor dupa gen, rating si tipul de media(film/serial).
                         </p>
                     </div>
                 </div>

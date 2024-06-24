@@ -51,6 +51,10 @@
         document.addEventListener('DOMContentLoaded', () => {
             loadDoc();
         });
+        function toggleDropdown() {
+            console.log("Toggled dropdown");
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
     </script>
 
 </head>
@@ -81,13 +85,49 @@
             </ul>
         </div>
         <div class="search-wrapper">
-            <div class="search-filters">
-                <img src="../Images/3lines.png" alt="Filters">
-            </div>
-            <form action="disney-show.php" method="GET" class="search-container">
-                <input type="text" placeholder="Search..." class="search-input" name="title">
-                <button class="search-button">Go</button>
-            </form>
+                <div class="search-filters">
+                    <img src="../Images/3lines.png" alt="Filters" onclick="toggleDropdown()">
+                    <form action="Netflix.php" method="GET">
+                        <div id="myDropdown" class="dropdown">
+                            <input id="clickMe" type="submit" value="Filter">
+                            <p>Ratings:</p>
+                            <input id="rating-pg13" type="checkbox" name="rating[0]"> PG-13</input>
+                            <input id="rating-pg" type="checkbox" name="rating[1]"> PG</input>
+                            <input id="rating-ma" type="checkbox" name="rating[2]"> MA</input>
+                            <input id="rating-tv14" type="checkbox" name="rating[3]"> TV-14</input>
+                            <input id="rating-tvy" type="checkbox" name="rating[4]"> TV-Y</input>
+                            <input id="rating-tvy7" type="checkbox" name="rating[5]"> TV-Y7</input>
+                            <input id="rating-g" type="checkbox" name="rating[6]"> G</input>
+                            <p>Genres:</p>
+                            <input id="genre-sports" type="checkbox" name="genre[0]"> Sports</input>
+                            <input id="genre-action-adventure" type="checkbox" name="genre[1]"> Action & Adventure</input>
+                            <input id="genre-international" type="checkbox" name="genre[2]"> International</input>
+                            <input id="genre-drama" type="checkbox" name="genre[3]"> Drama</input>
+                            <input id="genre-mistery" type="checkbox" name="genre[4]"> Mystery</input>
+                            <input id="genre-crime" type="checkbox" name="genre[5]"> Crime</input>
+                            <input id="genre-documentary" type="checkbox" name="genre[6]"> Documentary</input>
+                            <input id="genre-children-family" type="checkbox" name="genre[7]"> Children & Family</input>
+                            <input id="genre-horror" type="checkbox" name="genre[8]"> Horror</input>
+                            <input id="genre-romance" type="checkbox" name="genre[9]"> Romance</input>
+                            <input id="genre-comedy" type="checkbox" name="genre[10]"> Comedy</input>
+                            <input id="genre-music" type="checkbox" name="genre[11]"> Music</input>
+                            <input id="genre-scifi-fantasy" type="checkbox" name="genre[12]"> Sci-Fi & Fantasy</input>
+                            <input id="genre-kids" type="checkbox" name="genre[13]"> Kids</input>
+                            <input id="genre-thriller" type="checkbox" name="genre[14]"> Thriller</input>
+                            <input id="genre-reality" type="checkbox" name="genre[15]"> Reality</input>
+                            <input id="genre-teen" type="checkbox" name="genre[16]"> Teen</input>
+                            <input id="genre-anime" type="checkbox" name="genre[17]"> Anime</input>
+                            <input id="genre-classic" type="checkbox" name="genre[18]"> Classic</input>
+                            <p>Type:</p>
+                            <input id="type-movie" type="checkbox" name="type[0]"> Movie</input>
+                            <input id="type-tv" type="checkbox" name="type[1]"> TV</input>
+                        </div>
+                    </form>
+                </div>
+                <form action="netflix-show.php" method="GET" class="search-container">
+                    <input type="text" placeholder="Search..." class="search-input" name="title">
+                    <button class="search-button">Go</button>
+                </form>
         </div>
         <div id="shows" class="netflix-shows"></div>
         <div class="show-more">

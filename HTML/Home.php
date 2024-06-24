@@ -13,6 +13,7 @@
         <img class="logo" src="../Images/logo.png" alt="MoX Logo">
         <div class="pages-buttons-header">
             <ul class="button-list">
+                <li class="page-button"><a href="Login.php">Login</a></li>
                 <li class="page-button"><a href="Netflix.php">Netflix</a></li>
                 <li class="page-button"><a href="Disney.php">Disney</a></li>
                 <li class="page-button"><a href="About.php">About</a></li>
@@ -30,6 +31,7 @@
         </div>
         <div class="pages-buttons">
             <ul class="button-list">
+                <li class="page-button"><a href="Login.php">Login</a></li>
                 <li class="page-button"><a href="Netflix.php">Netflix</a></li>
                 <li class="page-button"><a href="Disney.php">Disney</a></li>
                 <li class="page-button"><a href="About.php">About</a></li>

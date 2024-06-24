@@ -53,7 +53,7 @@
                     <h3 class="section-header">Tehnologii utilizate</h3>
                     <div class="section-text">
                         <p>
-                            Pentru realizarea proiectului am folosit CSS pentru realizarea design-ului responsiv.
+                            In realizarea proiectului am folosit CSS pentru realizarea design-ului responsiv, PHP a fost folosit pentru creearea serverului, MySQLi a fost folosit pentru comunicarea cu baza de date, JavaScript a fost folosit pentru creearea de functii si tehnici de programare AJAX si GuzzleHttp pentru creearea de API call-uri ce au fost utilizate in preluarea datelor suplimentare despre filme/seriale.   .
                         </p>
                     </div>
                 </div>
