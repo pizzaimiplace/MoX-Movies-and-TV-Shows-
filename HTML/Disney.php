@@ -27,6 +27,8 @@ $showsList = [];
 while ($count > 0 && ($row = $result->fetch_assoc())) {
     $show = new Show($row["show_id"], $row["type"], $row["title"], $row["director"], $row["cast"], $row["country"], $row["date_added"], $row["release_year"], $row["rating"], $row["duration"], $row["listed_in"], $row["description"]);
     setPosterForShow($show, $apiKey);
+    if($show->posterPath=='../Images/NoPoster.png')
+        continue;
     array_push($showsList, $show);
     $count--;
 }
