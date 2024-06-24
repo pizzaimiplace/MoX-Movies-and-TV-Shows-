@@ -16,7 +16,8 @@
             return encodeURIComponent(str);
         }
         function loadDoc() {
-            let url = `load-disney.php?pos=${urlencode(position)}`;
+            const queryParams = new URLSearchParams(window.location.search);
+            let url = `load-disney.php?pos=${urlencode(position)}&${queryParams.toString()}`;
             fetch(url)
                 .then((response) => {
                     if (!response.ok) {
@@ -39,7 +40,7 @@
                 const div = document.createElement('div');
                 div.classList.add('show-card');
                 const a = document.createElement('a');
-                a.href = `netflix-show.php?title=${urlencode(show.title)}`;
+                a.href = `disney-show.php?title=${urlencode(show.title)}`;
                 const img = document.createElement('img');
                 img.src = show.posterPath;
                 img.alt = show.title;
@@ -87,7 +88,7 @@
         <div class="search-wrapper">
                 <div class="search-filters">
                     <img src="../Images/3lines.png" alt="Filters" onclick="toggleDropdown()">
-                    <form action="Netflix.php" method="GET">
+                    <form action="Disney.php" method="GET">
                         <div id="myDropdown" class="dropdown">
                             <input id="clickMe" type="submit" value="Filter">
                             <p>Ratings:</p>

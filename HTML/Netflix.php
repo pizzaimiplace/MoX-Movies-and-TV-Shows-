@@ -15,7 +15,8 @@
             return encodeURIComponent(str);
         }
         function loadDoc() {
-            let url = `load-netflix.php?pos=${urlencode(position)}`;
+            const queryParams = new URLSearchParams(window.location.search);
+            let url = `load-netflix.php?pos=${urlencode(position)}&${queryParams.toString()}`;
             fetch(url)
                 .then((response) => {
                     if (!response.ok) {
