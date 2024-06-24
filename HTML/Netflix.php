@@ -141,24 +141,24 @@
                                 label: 'Genres',
                                 data: [netflixStatistics.genres[0], netflixStatistics.genres[1], netflixStatistics.genres[2], netflixStatistics.genres[3], netflixStatistics.genres[4], netflixStatistics.genres[5], netflixStatistics.genres[6], netflixStatistics.genres[7], netflixStatistics.genres[8], netflixStatistics.genres[9], netflixStatistics.genres[10], netflixStatistics.genres[11], netflixStatistics.genres[12], netflixStatistics.genres[13], netflixStatistics.genres[14], netflixStatistics.genres[15], netflixStatistics.genres[16], netflixStatistics.genres[17], netflixStatistics.genres[18]],
                                 backgroundColor: [
-                                    'rgba(255, 99, 132, 1)',  // Red
-                                    'rgba(54, 162, 235, 1)',  // Blue
-                                    'rgba(255, 206, 86, 1)',  // Yellow
-                                    'rgba(75, 192, 192, 1)',  // Green
-                                    'rgba(153, 102, 255, 1)', // Purple
-                                    'rgba(255, 159, 64, 1)',  // Orange
-                                    'rgba(199, 199, 199, 1)', // Grey
-                                    'rgba(83, 102, 255, 1)',  // Light Blue
-                                    'rgba(255, 102, 178, 1)', // Pink
-                                    'rgba(102, 255, 102, 1)', // Light Green
-                                    'rgba(255, 102, 102, 1)', // Light Red
-                                    'rgba(102, 178, 255, 1)', // Light Blue
-                                    'rgba(178, 102, 255, 1)', // Light Purple
-                                    'rgba(255, 178, 102, 1)', // Light Orange
-                                    'rgba(255, 255, 102, 1)', // Light Yellow
-                                    'rgba(192, 192, 192, 1)', // Silver
-                                    'rgba(128, 128, 128, 1)', // Dark Grey
-                                    'rgba(102, 255, 178, 1)'  // Mint Green
+                                    'rgba(255, 99, 132, 1)',
+                                    'rgba(54, 162, 235, 1)',
+                                    'rgba(255, 206, 86, 1)',
+                                    'rgba(75, 192, 192, 1)',
+                                    'rgba(153, 102, 255, 1)',
+                                    'rgba(255, 159, 64, 1)',
+                                    'rgba(199, 199, 199, 1)',
+                                    'rgba(83, 102, 255, 1)',
+                                    'rgba(255, 102, 178, 1)',
+                                    'rgba(102, 255, 102, 1)',
+                                    'rgba(255, 102, 102, 1)',
+                                    'rgba(102, 178, 255, 1)',
+                                    'rgba(178, 102, 255, 1)',
+                                    'rgba(255, 178, 102, 1)',
+                                    'rgba(255, 255, 102, 1)',
+                                    'rgba(192, 192, 192, 1)',
+                                    'rgba(128, 128, 128, 1)',
+                                    'rgba(102, 255, 178, 1)'
                                 ],
                                 borderColor: [
                                     'rgba(255, 99, 132, 1)'

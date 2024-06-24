@@ -106,7 +106,7 @@
         align-items: center;
         justify-content: center;
         flex-direction: row;
-        flex-wrap: nowrap; /* Changed from wrap to nowrap to keep elements side by side */
+        flex-wrap: nowrap;
         margin-top: 15%;
         top: 50%;
     }
@@ -117,8 +117,8 @@
         border-radius: 3px;
         overflow: hidden;
         background-color: #001192;
-        margin: 0 10px; /* Add some spacing between the elements */
-        position: relative; /* Changed to relative to avoid overlap */
+        margin: 0 10px;
+        position: relative;
         ::placeholder {
             color: white;
         }
@@ -208,7 +208,7 @@
     .netflix-shows {
         display: flex;
         flex-wrap: wrap;
-        gap: 20px; /* Adjust the gap as needed */
+        gap: 20px;
         position: relative;
         margin: 20px 20px;
     }
@@ -223,11 +223,11 @@
     .show-card {
         border: 1px solid white;
         border-radius: 1%;
-        flex: 0 0 calc(25% - 20px); /* Calculate the width based on the gap */
+        flex: 0 0 calc(25% - 20px);
         display: flex;
         justify-content: center;
         align-items: center;
-        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        box-sizing: border-box;
         background-color: azure;
     }
 
@@ -287,7 +287,7 @@
         align-items: center;
         justify-content: center;
         flex-direction: row;
-        flex-wrap: nowrap; /* Changed from wrap to nowrap to keep elements side by side */
+        flex-wrap: nowrap;
         margin-top: 50%;
         top: 50%;
     }
@@ -298,9 +298,9 @@
         border-radius: 3px;
         overflow: hidden;
         background-color: #001192;
-        margin: 0 10px; /* Add some spacing between the elements */
-        width: 70%; /* Adjust width as needed to ensure a good layout */
-        position: relative; /* Changed to relative to avoid overlap */
+        margin: 0 10px;
+        width: 70%;
+        position: relative;
         ::placeholder {
             color: white;
         }
@@ -391,7 +391,7 @@
     .netflix-shows {
         display: flex;
         flex-wrap: wrap;
-        gap: 20px; /* Adjust the gap as needed */
+        gap: 20px;
         position: relative;
         margin: 20px 20px;
     }
@@ -406,11 +406,11 @@
     .show-card {
         border: 1px solid white;
         border-radius: 1%;
-        flex: 0 0 calc(50% - 20px); /* Calculate the width based on the gap */
+        flex: 0 0 calc(50% - 20px);
         display: flex;
         justify-content: center;
         align-items: center;
-        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        box-sizing: border-box;
         background-color: azure;
     }
     

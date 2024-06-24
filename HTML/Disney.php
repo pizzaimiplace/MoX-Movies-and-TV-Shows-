@@ -144,24 +144,24 @@
                                 label: 'Genres',
                                 data: [disneyStatistics.genres[0], disneyStatistics.genres[1], disneyStatistics.genres[2], disneyStatistics.genres[3], disneyStatistics.genres[4], disneyStatistics.genres[5], disneyStatistics.genres[6], disneyStatistics.genres[7], disneyStatistics.genres[8], disneyStatistics.genres[9], disneyStatistics.genres[10], disneyStatistics.genres[11], disneyStatistics.genres[12], disneyStatistics.genres[13], disneyStatistics.genres[14], disneyStatistics.genres[15], disneyStatistics.genres[16], disneyStatistics.genres[17], disneyStatistics.genres[18]],
                                 backgroundColor: [
-                                    'rgba(255, 99, 132, 1)',  // Red
-                                    'rgba(54, 162, 235, 1)',  // Blue
-                                    'rgba(255, 206, 86, 1)',  // Yellow
-                                    'rgba(75, 192, 192, 1)',  // Green
-                                    'rgba(153, 102, 255, 1)', // Purple
-                                    'rgba(255, 159, 64, 1)',  // Orange
-                                    'rgba(199, 199, 199, 1)', // Grey
-                                    'rgba(83, 102, 255, 1)',  // Light Blue
-                                    'rgba(255, 102, 178, 1)', // Pink
-                                    'rgba(102, 255, 102, 1)', // Light Green
-                                    'rgba(255, 102, 102, 1)', // Light Red
-                                    'rgba(102, 178, 255, 1)', // Light Blue
-                                    'rgba(178, 102, 255, 1)', // Light Purple
-                                    'rgba(255, 178, 102, 1)', // Light Orange
-                                    'rgba(255, 255, 102, 1)', // Light Yellow
-                                    'rgba(192, 192, 192, 1)', // Silver
-                                    'rgba(128, 128, 128, 1)', // Dark Grey
-                                    'rgba(102, 255, 178, 1)'  // Mint Green
+                                    'rgba(255, 99, 132, 1)',
+                                    'rgba(54, 162, 235, 1)',
+                                    'rgba(255, 206, 86, 1)',
+                                    'rgba(75, 192, 192, 1)',
+                                    'rgba(153, 102, 255, 1)',
+                                    'rgba(255, 159, 64, 1)',
+                                    'rgba(199, 199, 199, 1)',
+                                    'rgba(83, 102, 255, 1)',
+                                    'rgba(255, 102, 178, 1)',
+                                    'rgba(102, 255, 102, 1)',
+                                    'rgba(255, 102, 102, 1)',
+                                    'rgba(102, 178, 255, 1)',
+                                    'rgba(178, 102, 255, 1)',
+                                    'rgba(255, 178, 102, 1)',
+                                    'rgba(255, 255, 102, 1)',
+                                    'rgba(192, 192, 192, 1)',
+                                    'rgba(128, 128, 128, 1)',
+                                    'rgba(102, 255, 178, 1)'
                                 ],
                                 borderColor: [
                                     'rgba(255, 99, 132, 1)'

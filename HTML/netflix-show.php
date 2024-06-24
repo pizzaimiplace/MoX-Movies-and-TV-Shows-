@@ -64,12 +64,6 @@ include "database-connect.php";
 
 $sql = "SELECT * FROM netflix_titles";
 $result = $conn->query($sql);
-
-// output data of each row
-/*while($row = $result->fetch_assoc()) {
-  echo "id: " . $row["show_id"]. " - title: " . $row["title"]. "<br>";
-}*/
-//$row = getRowById($result, $_GET['show_id']);
 $row = getRowByTitle($result, $_GET["title"]);
 $show = new Show($row["show_id"], $row["type"], $row["title"], $row["director"], $row["cast"], $row["country"], $row["date_added"], $row["release_year"], $row["rating"], $row["duration"], $row["listed_in"], $row["description"]);
 
