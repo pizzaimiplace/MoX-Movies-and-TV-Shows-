@@ -21,17 +21,17 @@ class Show
   public function __construct($id, $type, $title, $director, $cast, $country, $date_added, $release_year, $rating, $duration, $listed_in, $description)
   {
     $this->id = $id;
-    $this->type = $type;
-    $this->title = $title;
-    $this->director = $director;
-    $this->cast = $cast;
-    $this->country = $country;
-    $this->date_added = $date_added;
-    $this->release_year = $release_year;
-    $this->rating = $rating;
-    $this->duration = $duration;
-    $this->listed_in = $listed_in;
-    $this->description = $description;
+    $this->type = $type !== null ? $type : "Unknown";
+    $this->title = $title !== null ? $title : "Unknown";
+    $this->director = $director !== null ? $director : "Unknown";
+    $this->cast = $cast !== null ? $cast : "Unknown";
+    $this->country = $country !== null ? $country : "Unknown";
+    $this->date_added = $date_added !== null ? $date_added : "Unknown";
+    $this->release_year = $release_year !== null ? $release_year : "Unknown";
+    $this->rating = $rating !== null ? $rating : "Unknown";
+    $this->duration = $duration !== null ? $duration : "Unknown";
+    $this->listed_in = $listed_in !== null ? $listed_in : "Unknown";
+    $this->description = $description !== null ? $description : "Unknown";
   }
 }
 function getRowById($result, $id = 1)
