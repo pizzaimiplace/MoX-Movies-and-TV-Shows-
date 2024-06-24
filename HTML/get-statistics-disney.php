@@ -54,7 +54,7 @@ while ($row = $result->fetch_assoc()) {
   for ($i = 0; $i < count($ratingsList); $i++) {
     foreach ($ratingsList[$i] as $rating) {
       if ($rating == $row["rating"])
-        $ratingStatistics[$i]++;
+        $ratingsStatistics[$i]++;
     }
   }
   $genres = trim($row["listed_in"]);
