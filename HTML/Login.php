@@ -54,7 +54,7 @@ function hideError($errorType)
 			</ul>
 		</div>
 		<div>
-			<form action="login-action.php" class="authentication-block" method="POST"></form>
+			<form action="login-action.php" class="authentication-block" method="POST">
 				<div class="authentication-element">
 					<h1 style="text-align: center;">Autentificare</h1>
 				</div>
@@ -85,6 +85,7 @@ function hideError($errorType)
 				<div class="authentication-element">
 					<button type="submit" style="align-content: center;">Autentificare</button>
 				</div>
+			</form>
 		</div>
 	</div>
 </body>
