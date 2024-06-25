@@ -8,8 +8,6 @@ $position = (int) $_GET["pos"];
 include "database-connect.php";
 $sql = "SELECT * FROM netflix_titles";
 $result = $conn->query($sql);
-//if ($position > mysqli_num_rows($result))
-//    exit();
 mysqli_data_seek($result, $position);
 $conn->close();
 if (isset($_GET["count"]) && is_numeric($_GET["count"])) {
